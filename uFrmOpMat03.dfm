@@ -1,0 +1,121 @@
+object frmOpMat03: TfrmOpMat03
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Operados Matem'#225'ticos'
+  ClientHeight = 375
+  ClientWidth = 329
+  Color = clWhite
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 17
+  object Label1: TLabel
+    Left = 104
+    Top = 8
+    Width = 106
+    Height = 25
+    Caption = 'Exerc'#237'cio 03'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 39
+    Width = 265
+    Height = 54
+    AutoSize = False
+    Caption = 
+      'Construa um algoritmo que leia o nome de um aluno e tr'#234's notas o' +
+      'btidas durante o semestre, ao final mostre o'
+    WordWrap = True
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 107
+    Width = 153
+    Height = 17
+    Caption = 'Informe o nome do aluno:'
+  end
+  object Label4: TLabel
+    Left = 32
+    Top = 154
+    Width = 198
+    Height = 17
+    Caption = 'Informe a primeira nota do aluno:'
+  end
+  object Label5: TLabel
+    Left = 32
+    Top = 208
+    Width = 143
+    Height = 17
+    Caption = 'Informe a segunda nota:'
+  end
+  object Label6: TLabel
+    Left = 32
+    Top = 264
+    Width = 137
+    Height = 17
+    Caption = 'Informe a terceira nota:'
+  end
+  object nome: TEdit
+    Left = 32
+    Top = 130
+    Width = 217
+    Height = 25
+    TabOrder = 0
+  end
+  object nota01: TEdit
+    Left = 32
+    Top = 177
+    Width = 41
+    Height = 25
+    BiDiMode = bdLeftToRight
+    NumbersOnly = True
+    ParentBiDiMode = False
+    TabOrder = 1
+  end
+  object nota02: TEdit
+    Left = 32
+    Top = 231
+    Width = 41
+    Height = 25
+    NumbersOnly = True
+    TabOrder = 2
+  end
+  object nota03: TEdit
+    Left = 32
+    Top = 287
+    Width = 41
+    Height = 25
+    TabOrder = 3
+  end
+  object calc: TButton
+    Left = 88
+    Top = 328
+    Width = 75
+    Height = 25
+    Caption = '&Calcular'
+    TabOrder = 4
+    OnClick = calcClick
+  end
+  object limpa: TButton
+    Left = 174
+    Top = 328
+    Width = 75
+    Height = 25
+    Caption = 'Limpar'
+    TabOrder = 5
+    OnClick = limpaClick
+  end
+end

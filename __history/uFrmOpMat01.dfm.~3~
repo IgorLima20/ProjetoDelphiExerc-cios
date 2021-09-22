@@ -1,0 +1,106 @@
+object frmOpMat01: TfrmOpMat01
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Operadores Matem'#225'ticos'
+  ClientHeight = 281
+  ClientWidth = 330
+  Color = clWhite
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 17
+  object Label1: TLabel
+    Left = 112
+    Top = 8
+    Width = 106
+    Height = 25
+    Caption = 'Exerc'#237'cio 01'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 48
+    Width = 265
+    Height = 54
+    AutoSize = False
+    Caption = 
+      'Elabore um algoritmo que leia 3 n'#250'meros e apresente o resultado ' +
+      'da soma do primeiro pelo segundo multiplicado pelo terceiro.'
+    WordWrap = True
+  end
+  object Label3: TLabel
+    Left = 24
+    Top = 120
+    Width = 59
+    Height = 17
+    Caption = 'N'#250'mero 1'
+  end
+  object Label4: TLabel
+    Left = 128
+    Top = 120
+    Width = 59
+    Height = 17
+    Caption = 'N'#250'mero 2'
+  end
+  object Label5: TLabel
+    Left = 224
+    Top = 120
+    Width = 59
+    Height = 17
+    Caption = 'N'#250'mero 3'
+  end
+  object edtNum1: TEdit
+    Left = 24
+    Top = 143
+    Width = 59
+    Height = 25
+    NumbersOnly = True
+    TabOrder = 0
+  end
+  object edtNum2: TEdit
+    Left = 128
+    Top = 143
+    Width = 59
+    Height = 25
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object edtNum3: TEdit
+    Left = 224
+    Top = 143
+    Width = 59
+    Height = 25
+    NumbersOnly = True
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 40
+    Top = 224
+    Width = 89
+    Height = 41
+    Caption = '&Calcular'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 184
+    Top = 224
+    Width = 89
+    Height = 41
+    Caption = '&Limpar'
+    TabOrder = 4
+    OnClick = Button2Click
+  end
+end

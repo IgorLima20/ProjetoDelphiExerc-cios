@@ -1,0 +1,40 @@
+unit uFrmPara03;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmPara03 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    btnCalcular: TButton;
+    memNumeros: TMemo;
+    procedure btnCalcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPara03: TfrmPara03;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPara03.btnCalcularClick(Sender: TObject);
+var i : integer;
+begin
+  for i := 10 to 40 do
+  begin
+    memNumeros.Clear;
+    if (i mod 2 = 0) then
+    memNumeros.Lines.Add(IntToStr(i));
+  end;
+end;
+
+end.

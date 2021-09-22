@@ -1,0 +1,40 @@
+unit uFrmPara04;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmPara04 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    memNumeros: TMemo;
+    btnCalcular: TButton;
+    btnLimpar: TButton;
+    procedure btnCalcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPara04: TfrmPara04;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPara04.btnCalcularClick(Sender: TObject);
+var ana, felis : double;
+    i : integer;
+    mens : string;
+begin
+  for I := Low to High do
+
+
+end;
+
+end.

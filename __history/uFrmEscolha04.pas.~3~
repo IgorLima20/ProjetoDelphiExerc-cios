@@ -1,0 +1,39 @@
+unit uFrmEscolha04;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
+  Vcl.StdCtrls;
+
+type
+  TfrmEscolha04 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Image1: TImage;
+    Label3: TLabel;
+    edtSaldo: TEdit;
+    btnCalcular: TButton;
+    btnLimpar: TButton;
+    procedure btnLimparClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmEscolha04: TfrmEscolha04;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmEscolha04.btnLimparClick(Sender: TObject);
+begin
+  edtSaldo.Clear;
+  edtSaldo.SetFocus;
+end;
+
+end.

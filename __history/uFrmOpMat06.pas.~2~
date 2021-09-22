@@ -1,0 +1,66 @@
+unit uFrmOpMat06;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tf = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    vendedor: TEdit;
+    inf: TLabel;
+    fixo: TEdit;
+    Label4: TLabel;
+    total: TEdit;
+    bcal: TButton;
+    clim: TButton;
+    procedure climClick(Sender: TObject);
+    procedure bcalClick(Sender: TObject);
+    procedure fixoKeyPress(Sender: TObject; var Key: Char);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f: Tf;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tf.bcalClick(Sender: TObject);
+var salario, resultado, cal, vendas : double;
+    mens, name : string;
+begin
+  salario := StrToFloat(fixo.Text);
+  vendas := StrToFloat(total.Text);
+  name := (vendedor.Text);
+  cal := 0.15*vendas;
+  resultado := cal + salario;
+  mens := 'O vendedor ' + name +
+  ' possui o salário fixo de: ' + FloatToStr(salario) +
+  ' e o seu salário final é de: ' + FloatToStr(resultado);
+  Application.MessageBox(PWideChar(mens), 'Resultado', MB_ICONINFORMATION);
+end;
+
+procedure Tf.climClick(Sender: TObject);
+begin
+  vendedor.Clear;
+  fixo.Clear;
+  total.Clear;
+  vendedor.SetFocus;
+end;
+
+procedure Tf.fixoKeyPress(Sender: TObject; var Key: Char);
+begin
+  if not (key in ['0'..'9', '.',',',#08]) then
+     Key := #0;
+end;
+
+end.

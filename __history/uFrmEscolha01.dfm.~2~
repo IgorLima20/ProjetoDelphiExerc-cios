@@ -1,0 +1,32 @@
+object frmEscolha01: TfrmEscolha01
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Estrutura Condicional - ESCOLHA'
+  ClientHeight = 362
+  ClientWidth = 322
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 17
+  object Label1: TLabel
+    Left = 120
+    Top = 8
+    Width = 106
+    Height = 25
+    Caption = 'Exerc'#237'cio 01'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end

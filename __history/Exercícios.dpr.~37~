@@ -1,0 +1,50 @@
+program Exercícios;
+
+uses
+  Vcl.Forms,
+  uFrmPrincipal in 'uFrmPrincipal.pas' {frmPrincipal},
+  uFrmOpMat01 in 'uFrmOpMat01.pas' {frmOpMat01},
+  uFrmOpMat02 in 'uFrmOpMat02.pas' {FrmOpMat02},
+  uFrmOpMat03 in 'uFrmOpMat03.pas' {frmOpMat03},
+  uFrmOpMat04 in 'uFrmOpMat04.pas' {frmOpMat04},
+  uFrmOpMat05 in 'uFrmOpMat05.pas' {frmOpMat05},
+  uFrmOpMat06 in 'uFrmOpMat06.pas' {frmOpMat06},
+  uFrmSep01 in 'uFrmSep01.pas' {frmSep01},
+  uFrmSep02 in 'uFrmSep02.pas' {frmSep02},
+  uFrmSep03 in 'uFrmSep03.pas' {frmSep03},
+  uFrmSep04 in 'uFrmSep04.pas' {frmSep04},
+  uFrmEscolha01 in 'uFrmEscolha01.pas' {frmEscolha01},
+  uFrmEscolha02 in 'uFrmEscolha02.pas' {frmEscolha02},
+  uFrmEscolha03 in 'uFrmEscolha03.pas' {frmEscolha03},
+  uFrmEscolha04 in 'uFrmEscolha04.pas' {frmEscolha04},
+  uFrmPara01 in 'uFrmPara01.pas' {frmPara01},
+  uFrmEnquanto01 in 'uFrmEnquanto01.pas' {frmEnquanto01},
+  uFrmRepita01 in 'uFrmRepita01.pas' {frmRepita01},
+  uFrmPara02 in 'uFrmPara02.pas' {frmPara02};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmOpMat01, frmOpMat01);
+  Application.CreateForm(TFrmOpMat02, FrmOpMat02);
+  Application.CreateForm(TfrmOpMat03, frmOpMat03);
+  Application.CreateForm(TfrmOpMat04, frmOpMat04);
+  Application.CreateForm(TfrmOpMat05, frmOpMat05);
+  Application.CreateForm(TfrmOpMat06, frmOpMat06);
+  Application.CreateForm(TfrmSep01, frmSep01);
+  Application.CreateForm(TfrmSep02, frmSep02);
+  Application.CreateForm(TfrmSep03, frmSep03);
+  Application.CreateForm(TfrmSep04, frmSep04);
+  Application.CreateForm(TfrmEscolha01, frmEscolha01);
+  Application.CreateForm(TfrmEscolha02, frmEscolha02);
+  Application.CreateForm(TfrmEscolha03, frmEscolha03);
+  Application.CreateForm(TfrmEscolha04, frmEscolha04);
+  Application.CreateForm(TfrmPara01, frmPara01);
+  Application.CreateForm(TfrmEnquanto01, frmEnquanto01);
+  Application.CreateForm(TfrmRepita01, frmRepita01);
+  Application.CreateForm(TfrmPara02, frmPara02);
+  Application.Run;
+end.
